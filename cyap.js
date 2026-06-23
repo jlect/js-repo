@@ -4,9 +4,11 @@ let responseBody;
 try {
   responseBody = JSON.parse(body);
 } catch (e) {
+  console.log("vip_info 脚本：JSON 解析失败 ->", e);
   // 解析失败就直接返回原始响应
   $done({});
 }
+console.log("信息", responseBody);
 
 // 只处理包含 vip_info 的响应
 if (responseBody && responseBody.vip_info) {
