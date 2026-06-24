@@ -1,5 +1,5 @@
 let body = $response.body;
-console.log("信息", body);
+console.log( body);
 let responseBody;
 
 try {
