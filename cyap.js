@@ -9,6 +9,7 @@ try {
   $done({});
 }
 console.log("信息", responseBody);
+$notify("1","2","3",null)
 
 // 只处理包含 vip_info 的响应
 if (responseBody && responseBody.vip_info) {
