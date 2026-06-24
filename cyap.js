@@ -1,4 +1,5 @@
 let body = $response.body;
+console.log("信息", body);
 let responseBody;
 
 try {
@@ -8,7 +9,6 @@ try {
   // 解析失败就直接返回原始响应
   $done({});
 }
-console.log("信息", body);
 $notify("1","2","3",null)
 
 // 只处理包含 vip_info 的响应
