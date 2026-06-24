@@ -1,5 +1,5 @@
 let body = $response.body;
-console.log( body);
+console.log($request.url);
 let responseBody;
 
 try {
